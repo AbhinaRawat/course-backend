@@ -5,7 +5,7 @@ const userRoutes = require('./routes/userRoutes');
 
 const app = express();
 app.use(cors({
-  origin: 'https://frolicking-sorbet-18c3db.netlify.app',
+  origin: 'https://bejewelled-cendol-ab1ebd.netlify.app',
   credentials: true
 }));app.use(express.json());
 
