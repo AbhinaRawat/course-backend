@@ -4,8 +4,10 @@ const courseRoutes = require('./routes/courseRoutes');
 const userRoutes = require('./routes/userRoutes');
 
 const app = express();
-app.use(cors());
-app.use(express.json());
+app.use(cors({
+  origin: 'https://fancy-chaja-51de97.netlify.app',
+  credentials: true
+}));app.use(express.json());
 
 app.use('/api/courses', courseRoutes);
 app.use('/api/users', userRoutes);
